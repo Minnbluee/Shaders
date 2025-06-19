@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 83a5e7ad64764f648bff384d98939e2f
+guid: b2d0549714e6134468fb161543d0a6eb
 ShaderImporter:
   externalObjects: {}
   defaultTextures:
-  - _Asphalt: {fileID: 2800000, guid: 7841ea355c29c2b4fa1f4d3d6a0c25f3, type: 3}
+  - _utc_obj_kunozi_alb: {fileID: 2800000, guid: 42892201669398f4b9121d3b4feb786b, type: 3}
   nonModifiableTextures: []
   userData: 
   assetBundleName: 
