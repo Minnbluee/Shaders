@@ -1,0 +1,519 @@
+# Blender MTL File: 'None'
+# Material Count: 47
+
+newmtl GRAVITY
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd ef_GravityPanell2_Alb.png
+map_d ef_GravityPanell2_Alb.png
+
+newmtl ef_glideboard
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd ef_glideboard02_Alb.png
+map_d ef_glideboard02_Alb.png
+
+newmtl ef_gravityboard
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd ef_GravityPanell_Alb2.png
+map_d ef_GravityPanell_Alb2.png
+
+newmtl ef_sea04
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd ef_sea04_Alb.png
+map_d ef_sea04_Alb.png
+
+newmtl ef_waterfall05
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd ef_waterfall05_Alb.png
+map_d ef_waterfall05_Alb.png
+
+newmtl kh_buildingwindow2
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd kh_buildingwindow2_Emm.png
+map_d kh_buildingwindow2_Emm.png
+
+newmtl suna2
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd suna_Alb.png
+map_d suna_Alb.png
+
+newmtl tc_Obj_Kunozi
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_Obj_Kunozi_Alb.png
+map_d utc_Obj_Kunozi_Alb.png
+
+newmtl tc_Obj_Kunozi_Alpha
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_Obj_Kunozi_Alb.png
+map_d utc_Obj_Kunozi_Alb.png
+
+newmtl tc_countdown_anim
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_countdoun.0.png
+map_d utc_countdoun.0.png
+
+newmtl tc_dancefloor_a
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_dancefoor_a_Alb.png
+map_d utc_dancefoor_a_Alb.png
+
+newmtl tc_dancefloor_y
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_dancefloor_b_Alb.png
+map_d utc_dancefloor_b_Alb.png
+
+newmtl tc_flag
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_Flag_Alb.png
+map_d utc_Flag_Alb.png
+
+newmtl tc_frame
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_Frame_Alb.png
+map_d utc_Frame_Alb.png
+
+newmtl tc_gardrare
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_gardrare_Alb.png
+map_d utc_gardrare_Alb.png
+
+newmtl tc_ico
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_ico_Alb.png
+map_d utc_ico_Alb.png
+
+newmtl tc_icolize2
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_icolizer_Alb.png
+map_d utc_icolizer_Alb.png
+
+newmtl tc_lazer
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_lazer_Alb.png
+map_d utc_lazer_Alb.png
+
+newmtl tc_mini_star
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_mini_star_Alb.png
+map_d utc_mini_star_Alb.png
+
+newmtl tc_mktv
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd MKTV.0.png
+map_d MKTV.0.png
+
+newmtl tc_mktv_green
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd MKTV.0.png
+map_d MKTV.0.png
+
+newmtl tc_mktv_pink
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd MKTV.0.png
+map_d MKTV.0.png
+
+newmtl tc_raod_tv1
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd TV_Pixel_alb.png
+map_d TV_Pixel_alb.png
+
+newmtl tc_refban_TechnoMonita
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd capture.0.png
+map_d capture.0.png
+
+newmtl tc_refban_blue
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_spotlight_Emm.png
+map_d utc_spotlight_Emm.png
+
+newmtl tc_refboard
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_cubemap_light_Alb.png
+map_d utc_cubemap_light_Alb.png
+
+newmtl tc_road
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd tile_road_Alb.png
+map_d tile_road_Alb.png
+
+newmtl tc_road_futate_g
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_road_futate_green_Alb.png
+map_d utc_road_futate_green_Alb.png
+
+newmtl tc_road_green
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_road_green_Alb.png
+map_d utc_road_green_Alb.png
+
+newmtl tc_road_jump
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_road_jump_Alb.png
+map_d utc_road_jump_Alb.png
+
+newmtl tc_road_movelight
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_road_movelight_Emm2.png
+map_d utc_road_movelight_Emm2.png
+
+newmtl tc_road_stage
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_road_stage_Alb.png
+map_d utc_road_stage_Alb.png
+
+newmtl tc_spk
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_spk_Alb.png
+map_d utc_spk_Alb.png
+
+newmtl tc_spotlight_blue
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_SpotLightM_Alb.png
+map_d utc_SpotLightM_Alb.png
+
+newmtl tc_spotlight_greenM
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_SpotLightM_Alb.png
+map_d utc_SpotLightM_Alb.png
+
+newmtl tc_spotlight_light_blue
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_spotlight_light_Alb.png
+map_d utc_spotlight_light_Alb.png
+
+newmtl tc_spotlight_light_green
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_spotlight_light_Alb.png
+map_d utc_spotlight_light_Alb.png
+
+newmtl tc_spotlight_pink
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_SpotLightM_Alb.png
+map_d utc_SpotLightM_Alb.png
+
+newmtl tc_starcuplogo
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_starcuplogo_Alb.png
+map_d utc_starcuplogo_Alb.png
+
+newmtl tc_startgrid
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_startgrid_Alb.png
+map_d utc_startgrid_Alb.png
+
+newmtl tc_startgridline
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd upc_startgrid_Alb.png
+map_d upc_startgrid_Alb.png
+
+newmtl tc_startkanban
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_startkanban_Emm.png
+map_d utc_startkanban_Emm.png
+
+newmtl tc_tileroad_kaidan
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd tile_road_kaidan_Alb.png
+map_d tile_road_kaidan_Alb.png
+
+newmtl tc_wall_emm
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_wall_light_Alb.png
+map_d utc_wall_light_Alb.png
+
+newmtl tc_wall_men
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_wall_men_Spm.png
+map_d utc_wall_men_Spm.png
+
+newmtl tc_wall_tubu_enkei
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_wall_tubu_Alb.png
+map_d utc_wall_tubu_Alb.png
+
+newmtl tc_wall_tubutubu
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 1
+map_Kd utc_wall_tubu_Alb.png
+map_d utc_wall_tubu_Alb.png
