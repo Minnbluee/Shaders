@@ -2,7 +2,8 @@ fileFormatVersion: 2
 guid: bed27bbea7832594ea2bde2789e6a301
 ShaderImporter:
   externalObjects: {}
-  defaultTextures: []
+  defaultTextures:
+  - _BrushedMetalNormal: {fileID: 2800000, guid: bd734c29baceb63499732f24fbaea45f, type: 3}
   nonModifiableTextures: []
   userData: 
   assetBundleName: 
