@@ -11,17 +11,17 @@ Shader "Niebla"
 	{
 		
 		
-		Tags { "RenderType"="Opaque" }
+		Tags { "RenderType"="Transparent" }
 	LOD 100
 
 		CGINCLUDE
 		#pragma target 3.0
 		ENDCG
-		Blend Off
+		Blend SrcAlpha OneMinusSrcAlpha
 		AlphaToMask Off
-		Cull Back
+		Cull Off
 		ColorMask RGBA
-		ZWrite On
+		ZWrite Off
 		ZTest LEqual
 		Offset 0 , 0
 		
@@ -102,9 +102,9 @@ Shader "Niebla"
 				#ifdef ASE_NEEDS_FRAG_WORLD_POSITION
 				float3 WorldPosition = i.worldPos;
 				#endif
-				float4 color14 = IsGammaSpace() ? float4(0.3490566,0.3013083,0.3013083,0) : float4(0.09992068,0.07388841,0.07388841,0);
-				float clampResult11 = clamp( ( length( ( WorldPosition - _WorldSpaceCameraPos ) ) * 0.0 ) , 0.0 , 1.0 );
-				float4 lerpResult9 = lerp( UNITY_LIGHTMODEL_AMBIENT , color14 , sin( clampResult11 ));
+				float4 color14 = IsGammaSpace() ? float4(0.5517488,0,0.6698113,0) : float4(0.2651035,0,0.4061945,0);
+				float clampResult11 = clamp( ( length( ( WorldPosition - _WorldSpaceCameraPos ) ) * 1.0 ) , 0.0 , 1.0 );
+				float4 lerpResult9 = lerp( UNITY_LIGHTMODEL_AMBIENT , color14 , sin( ( clampResult11 + _Time.y ) ));
 				
 				
 				finalColor = lerpResult9;
@@ -119,29 +119,36 @@ Shader "Niebla"
 }
 /*ASEBEGIN
 Version=18900
-0;23;1920;983;1288.934;650.4124;1.3;True;True
-Node;AmplifyShaderEditor.WorldPosInputsNode;1;-704.9119,-70.91822;Inherit;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
-Node;AmplifyShaderEditor.WorldSpaceCameraPos;2;-755.9119,72.08181;Inherit;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
-Node;AmplifyShaderEditor.SimpleSubtractOpNode;3;-464.9124,-52.91825;Inherit;False;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0
-Node;AmplifyShaderEditor.LengthOpNode;6;-301.4817,-47.32878;Inherit;False;1;0;FLOAT3;0,0,0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.SimpleMultiplyOpNode;10;-173.2932,20.53952;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.ClampOpNode;11;-23.99309,25.4395;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;1;FLOAT;0
-Node;AmplifyShaderEditor.FogAndAmbientColorsNode;5;-567.7127,-338.4183;Inherit;False;UNITY_LIGHTMODEL_AMBIENT;0;1;COLOR;0
-Node;AmplifyShaderEditor.ColorNode;14;-285.5793,-240.0119;Inherit;False;Constant;_Color0;Color 0;0;0;Create;True;0;0;0;False;0;False;0.3490566,0.3013083,0.3013083,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.SinOpNode;7;105.7179,-113.8287;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.LerpOp;9;245.3181,-310.2287;Inherit;False;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;FLOAT;0;False;1;COLOR;0
-Node;AmplifyShaderEditor.CosOpNode;8;253.6182,-10.32886;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.FogParamsNode;4;200.4875,82.68147;Inherit;False;0;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;0;447.5,-142.9999;Float;False;True;-1;2;ASEMaterialInspector;100;1;Niebla;0770190933193b94aaa3065e307002fa;True;Unlit;0;0;Unlit;2;False;True;0;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;True;0;False;-1;0;False;-1;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;0;False;-1;False;True;True;True;True;True;0;False;-1;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;True;1;False;-1;True;3;False;-1;True;True;0;False;-1;0;False;-1;True;1;RenderType=Opaque=RenderType;True;2;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;1;LightMode=ForwardBase;False;0;;0;0;Standard;1;Vertex Position,InvertActionOnDeselection;1;0;1;True;False;;False;0
+690;105;1133;551;1347.362;591.4677;2.031645;True;True
+Node;AmplifyShaderEditor.WorldSpaceCameraPos;2;-914.6358,18.08181;Inherit;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
+Node;AmplifyShaderEditor.WorldPosInputsNode;1;-861.6358,-141.9182;Inherit;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
+Node;AmplifyShaderEditor.SimpleSubtractOpNode;3;-653.6363,-95.91825;Inherit;False;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0
+Node;AmplifyShaderEditor.RangedFloatNode;15;-534.9973,10.23621;Inherit;False;Constant;_Float0;Float 0;0;0;Create;True;0;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.LengthOpNode;6;-509.2061,-94.32878;Inherit;False;1;0;FLOAT3;0,0,0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;10;-367.0176,-48.46048;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.ClampOpNode;11;-222.7174,-31.5605;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;1;FLOAT;0
+Node;AmplifyShaderEditor.SimpleTimeNode;18;-247.0449,112.3427;Inherit;False;1;0;FLOAT;1;False;1;FLOAT;0
+Node;AmplifyShaderEditor.SimpleAddOpNode;17;-62.30351,-5.912211;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.ColorNode;14;-196.5793,-314.0119;Inherit;False;Constant;_Color0;Color 0;0;0;Create;True;0;0;0;False;0;False;0.5517488,0,0.6698113,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.SinOpNode;7;43.74852,-100.735;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.FogAndAmbientColorsNode;5;-240.7127,-398.4183;Inherit;False;UNITY_LIGHTMODEL_AMBIENT;0;1;COLOR;0
+Node;AmplifyShaderEditor.DepthFade;16;-763.6,-264.6342;Inherit;False;True;False;True;2;1;FLOAT3;0,0,0;False;0;FLOAT;1;False;1;FLOAT;0
+Node;AmplifyShaderEditor.CosOpNode;8;-454.3818,-243.3289;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.FogParamsNode;4;-623.5125,-419.3185;Inherit;False;0;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.LerpOp;9;164.3181,-250.2287;Inherit;True;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;FLOAT;0;False;1;COLOR;0
+Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;0;390.5,-384.9999;Float;False;True;-1;2;ASEMaterialInspector;100;1;Niebla;0770190933193b94aaa3065e307002fa;True;Unlit;0;0;Unlit;2;True;True;2;5;False;-1;10;False;-1;0;5;False;-1;10;False;-1;True;0;False;-1;0;False;-1;False;False;False;False;False;False;False;False;False;True;0;False;-1;True;True;2;False;-1;False;True;True;True;True;True;0;False;-1;False;False;False;False;False;False;False;True;False;255;False;-1;255;False;-1;255;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;True;True;2;False;-1;True;3;False;-1;True;True;0;False;-1;0;False;-1;True;1;RenderType=Transparent=RenderType;True;2;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;1;LightMode=ForwardBase;False;0;;0;0;Standard;1;Vertex Position,InvertActionOnDeselection;1;0;1;True;False;;False;0
 WireConnection;3;0;1;0
 WireConnection;3;1;2;0
 WireConnection;6;0;3;0
 WireConnection;10;0;6;0
+WireConnection;10;1;15;0
 WireConnection;11;0;10;0
-WireConnection;7;0;11;0
+WireConnection;17;0;11;0
+WireConnection;17;1;18;0
+WireConnection;7;0;17;0
 WireConnection;9;0;5;0
 WireConnection;9;1;14;0
 WireConnection;9;2;7;0
 WireConnection;0;0;9;0
 ASEEND*/
-//CHKSM=E339E4DF6EE0299A688C0B7D657A0B171114117E
+//CHKSM=68D9FF7B2F417F9E923B232B2DC02FE061F61AC0
